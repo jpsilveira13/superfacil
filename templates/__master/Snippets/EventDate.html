@@ -1,0 +1,43 @@
+<!--<link rel="stylesheet" href="%%GLOBAL_ShopPath%%/javascript/pikaday/css/pikaday.css">
+<script src="%%GLOBAL_ShopPath%%/javascript/pikaday/pikaday.js"></script>
+<script src="%%GLOBAL_ShopPath%%/javascript/pikaday/plugins/pikaday.jquery.js"></script>
+<script type="text/javascript" src="http://momentjs.com/downloads/moment-with-locales.js"></script>
+	<div>
+		<div class="flow-element">
+		    <input type="text" id="datepicker">
+		</div>
+		<div class="flow-element">
+			<div id="container"></div>
+		</div>
+	</div>
+	
+	<div>
+		%%GLOBAL_EventDateLimitations%%
+	</div>
+
+	<script>
+	    var picker = new Pikaday(
+	    {
+	        field: document.getElementById('datepicker'),
+	        firstDay: 1,
+	        bound: false,
+	        container: document.getElementById('container'),
+	    });
+	</script>-->
+
+	<strong>%%GLOBAL_EventDateName%%:</strong><br /><br />
+	<select id="EventDateDay" name="EventDate[Day]" class="CalendarSelectSmall" style="margin-bottom:3px; %%GLOBAL_EventDateDayStyle%%">
+		%%GLOBAL_OverviewToDays%%
+	</select>
+
+	<select id="EventDateMonth" name="EventDate[Mth]" class="CalendarSelectSmall" style="margin-bottom:3px; %%GLOBAL_EventDateMonthStyle%%">
+		%%GLOBAL_OverviewToMonths%%
+	</select>
+
+	<select id="EventDateYear" name="EventDate[Yr]" class="CalendarSelectSmall" style="margin-bottom:3px; %%GLOBAL_EventDateYearStyle%%">
+		%%GLOBAL_OverviewToYears%%
+	</select>
+	
+	<div>
+		%%GLOBAL_EventDateLimitations%%
+	</div>

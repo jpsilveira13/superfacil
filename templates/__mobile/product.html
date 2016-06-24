@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+%%Panel.HTMLHead%%
+<head>
+	<style type="text/css">
+			.iosSlider {
+				width: 900px;
+				height: 230px;
+			}
+			
+			.iosSlider .slider {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.iosSlider .slider .item {
+				position:;
+				top: 0;
+				left: 0;
+				
+				width: 320px;
+				height: 300px;
+				background: #fff;
+				margin: 0 0 0 0;
+			}
+			
+		
+		</style>
+	<!--get src js script from iosslider-->	
+	<script type="text/javascript" src="%%GLOBAL_ShopPath%%/javascript/jquery/plugins/slider/_src/jquery.iosslider.js?%%GLOBAL_JSCacheToken%%"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+			
+				$('.iosSlider').iosSlider({
+					snapToChildren: true,
+					desktopClickDrag: true,
+					infiniteSlider: false
+				});
+				
+			});
+		</script>	
+</head>
+<body>
+	<script type="text/javascript" src="%%GLOBAL_AppPath%%/javascript/product.functions.js?%%GLOBAL_JSCacheToken%%"></script>
+	<script type="text/javascript" src="%%GLOBAL_AppPath%%/javascript/product.js?%%GLOBAL_JSCacheToken%%"></script>
+	<div id="Container">
+	%%Panel.Header%%
+	<div id="Wrapper">
+		%%Panel.WrapperBanner%%
+		<div class="Content Wide" id="LayoutColumn1">
+			%%Panel.HeaderSearch%%
+			%%Panel.ProductDetails%%
+			%%Panel.ProductTabs%%
+			%%Panel.ProductDescription%%
+			%%Panel.ProductMiscDetails%%
+			%%Panel.ProductVendorsOtherProducts%%
+			%%Panel.ProductReviews%%
+			%%Panel.SideProductRelated%%
+		</div>
+		
+
+	</div>
+	%%Panel.Footer%%
+</div>
+</body>
+</html>

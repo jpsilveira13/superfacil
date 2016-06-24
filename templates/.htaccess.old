@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http://oxynutri.com.br/.*$ [NC]  #este site está liberado a usar
+RewriteCond %{HTTP_REFERER} !^http://www.google.com.br/.*$ [NC]  #liberar o google para usar as suas imagens
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp|php|js|swf|css|html)$ – [F,NC]

@@ -1,0 +1,15 @@
+.iosSlider{position: relative;top: 0;left: 0;overflow: hidden;width: 982px;height: 300px;margin-top: 10px;}
+.iosSlider .prevButton {position: absolute;top: 130px;left: 0; width: 20px;height: 40px;background: url(slider-buttons.png) no-repeat 0 0;z-index: 2;}
+.iosSlider .nextButton {position: absolute;top: 130px;right: 0;width: 20px;height: 40px;background: url(slider-buttons.png) no-repeat 100% 0;z-index: 2;}
+.iosSlider .slider {width: 100%;height: 100%;}
+.iosSlider .slider .item {position: relative;top: 0;left: 0;width: 982px;height: 300px;margin:0;}
+.iosSlider .slider .item .image {position: absolute;top: 0;left: 0;width: 100%; height: 300px;}
+.iosSlider .slider .item .image .bg {border: 10px solid #000;border-right: 0;height: 180px;width: 340px;opacity: 0.5;display: none;}
+.iosSlider .slider .item .text {position: absolute;bottom: 0;right: 0;width: 180px;height: 260px;padding: 20px;}
+.iphoneUI .iosSlider .slider .item .text {display: none;}
+.iphoneUI .iosSlider .slider .item .text .bg { display: none;}
+.iosSlider .slider .item .title {position: relative;top: 0;left: 0;text-indent: -1px;}
+.iosSlider .slider .item .title span {color: #fff;font: bold 40px/40px "Helvetica Neue",Helvetica,Arial,sans-serif;text-shadow: 0 -1px 1px #000;}
+.iosSlider .slider .item .desc {position: relative;top: 0;left: 0;margin: 10px 0 0 0;}
+.iosSlider .slider .item .desc span {color: #fff;font: normal 16px/22px "Helvetica Neue",Helvetica,Arial,sans-serif;text-shadow: 0 -1px 1px #000;}
+.iosSlider .slider .item .button {position: absolute;right: 20px;bottom: 20px;margin: 10px 0 0 0;cursor: pointer;}

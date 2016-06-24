@@ -1,0 +1,127 @@
+<head>
+	<title>%%Page.WindowTitle%%</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=%%GLOBAL_CharacterSet%%" />
+	<meta name="description" content="%%Page.MetaDescription%%" />
+	<meta name="keywords" content="%%Page.MetaKeywords%%" />
+	%%Page.CanonicalLink%%
+	%%Page.Robots%%
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+
+	<!-- Set viewport to iPhone portrait mode -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="shortcut icon" href="%%GLOBAL_Favicon%%" />
+
+	%%GLOBAL_Stylesheets%%
+
+	<!-- Tell the browsers about our RSS feeds -->
+	%%GLOBAL_HeadRSSLinks%%
+
+	<!-- Include visitor tracking code (if any) -->
+	%%GLOBAL_TrackingCode%%
+
+	<script type="text/javascript" src="%%GLOBAL_ShopPath%%/javascript/jquery.js?%%GLOBAL_JSCacheToken%%"></script>
+	<script type="text/javascript" src="%%GLOBAL_ShopPath%%/javascript/menudrop.js?%%GLOBAL_JSCacheToken%%"></script>
+	<script type="text/javascript" src="%%GLOBAL_ShopPath%%/javascript/common.js?%%GLOBAL_JSCacheToken%%"></script>
+	<script type="text/javascript" src="%%GLOBAL_ShopPath%%/javascript/iselector.js?%%GLOBAL_JSCacheToken%%"></script>
+
+	<!-- HIDE IPHONE MENU BAR WHEN PAGE LOADS -->
+	<script type="application/x-javascript">
+		$(document).ready(function() {
+			$('#SearchForm #search_query').bind('keydown', function() {
+				$('#SearchForm label').hide();
+			})
+			.bind('blur', function() {
+				if(!$(this).val()) {
+					$('#SearchForm label').show();
+				}
+			});
+		});
+		addEventListener('load', function() { 
+			setTimeout(hideAddressBar, 0); 
+		}, false);
+		function hideAddressBar() { 
+			window.scrollTo(0, 1); 
+		}
+	</script>
+
+	<script type="text/javascript">
+	//<![CDATA[
+	config.ShopPath = '%%GLOBAL_ShopPath%%';
+	config.AppPath = '%%GLOBAL_AppPath%%';
+	var ThumbImageWidth = %%GLOBAL_ProductThumbImageWidth%%;
+	var ThumbImageHeight = %%GLOBAL_ProductThumbImageHeight%%;
+	//]]>
+	</script>
+	%%GLOBAL_AdditionalScriptTags%%
+	%%GLOBAL_RTLStyles%%
+	<script type="text/javascript">
+		function MobilefastCartAction(event) {
+			var url = '';
+
+			// Supplied URL
+			if (typeof(event) == 'string') {
+				var url = event;
+			}
+			// Event raised from a clicked link
+			else if (event.type == 'click' && $(event.target).is('a')) {
+				event.preventDefault();
+				var url = event.target.href;
+			}
+			// 'Add' button on product details page
+			else if (event.type == 'submit') {
+				var url = $('#productDetailsAddToCartForm').attr('action') + '?' + $('#productDetailsAddToCartForm').serialize();
+			}
+
+			// Make sure a valid URL was supplied
+			if (!url || url.indexOf('cart.php') == -1) {
+				return false;
+			}
+
+			_MobileshowFastCart(url + '&fastcart=1');
+			return false;
+
+		}
+		function _MobileshowFastCart(url) {
+
+			// strip protocol from url to fix cross protocol ajax access denied problem
+			url = url.replace(/^http[s]{0,1}:\/\/[^\/]*\/?/, '/');
+
+			$.iModal.close();
+			$.iModal({
+				type: 'ajax',
+				width: 300,
+				url: url,
+				closeTxt: true,
+				onAjaxError: function() {
+					window.location.href = url.replace(/&fastcart=1/, '');
+				},
+				onShow: function() {
+					$("#fastCartSuggestive a[href*='cart.php?action=add']").unbind('click');
+					$("#fastCartSuggestive a[href*='cart.php?action=add']").click(function(event) {
+						// attach action to suggestive products' link
+						fastCartAction(event);
+					});
+
+					var itemTxt = $('#fastCartNumItemsTxt').html();
+					if (itemTxt) {
+						// update the view cart item count on top menu
+						$('.CartLink span').html('(' + itemTxt + ')');
+					}
+					setProductListHeights(null, '.fastCartContent');
+					$('.fastCartContent .ProductList:not(.List) li').width(ThumbImageWidth);
+				},
+				onClose: function() {
+					if (window.location.href.match(config.ShopPath + '/cart.php')) {
+						// reload if we are on the cart page
+						$('#ModalContainer').remove();
+						window.location = window.location.href
+					} else {
+						$('#ModalContainer').remove();
+					}
+				}
+			});
+		}
+	</script>
+</head>

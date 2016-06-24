@@ -1,0 +1,432 @@
+/* Color: Blue */
+
+body {
+	color: #535353;
+	background-color: #F7F7F7;
+	background: url('../images/bg.png') repeat;
+}
+
+a {
+	color: #2e3a47;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #58dd90;
+}
+
+h2 {
+
+}
+
+h3 {
+	color: #555;
+	text-transform: uppercase;
+}
+
+#TopMenu li a, #TopMenu li div {
+	color: #666;
+	font-family: 'Roboto Condensed', sans-serif !important;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+#TopMenu li a i{margin-right: 5px;}
+#TopMenu li div a {
+	border-left: 0;
+}
+
+#TopMenu li a:hover {
+	text-decoration: none;
+	color: #58dd90;
+}
+
+#Menu li ul li:hover{
+	background: none !important;
+}
+
+#Menu li ul li a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#Menu li:hover a, #Menu li.over a{
+	text-decoration: none;
+	color: #333;
+}
+
+#Header {
+	padding: 30px 0;
+}
+
+#Logo h1 {
+	color: #fff;
+}
+
+#Logo h1 a {
+	color: #fff;
+}
+
+#SearchForm {
+	color: #95bbd1;
+}
+
+#SearchForm label {
+	color: #fff;
+}
+
+#SearchForm a {
+	color: #b1ccdc;
+}
+
+#SearchForm a:hover {
+	color: #fff;
+}
+
+.Left {
+
+}
+
+.Left li {
+
+}
+
+.Left li a:hover {
+
+}
+
+.Content {
+
+}
+
+.Content a {
+
+}
+
+.Content.Wide {
+
+}
+
+.Content.Widest {
+
+}
+
+
+.Right {
+
+}
+
+.Right a {
+	color: #034285;
+}
+
+.Right a:hover, .Right a:hover strong {
+	color: #001927;
+}
+
+.Content .ProductList li,
+.fastCartContent .ProductList li {
+
+}
+
+.Content .ProductList li:hover{
+
+}
+
+.ProductList .ProductImage {
+	background: #fff;
+	border: 1px solid #eee;
+	padding: 10px;
+	display: table-cell;
+	vertical-align: middle;
+	border-radius: 5px;
+}
+
+.ProductList strong, .ProductList strong a {
+
+}
+.ouematevalor{
+	font-weight: bold;
+}
+.ProductPrice, .ProductList em {
+	color: #58dd90;
+	font-size: 23px;
+	height: 40px;
+	display: table-cell;
+	width: 168px;
+	font-family: Roboto Condensed, sans-serif !important;
+	vertical-align: bottom;
+}
+
+.RetailPriceValue{
+	font-size: 12px;
+	color: #aaa;
+	display: block;
+}
+
+.ProductList .Rating {
+	margin-top: 10px;
+}
+
+.Right .ProductList li {
+	border-bottom: 1px solid #c0dae7;
+}
+
+.Content .FeaturedProducts .ProductList li {
+
+}
+
+.Content .FeaturedProducts .ProductList li:hover, .Content .FeaturedProducts .ProductList li.Over {
+
+}
+
+.CompareItem { width:200px; border-left: solid 1px #CACACA; }
+.CompareFieldName { font-weight:bold; border-bottom: 1px solid #EFF8FA; }
+.CompareFieldTop { border-bottom:solid 1px #85BADF; }
+.CompareFieldTop a:hover { color:red; }
+.CompareCenter { border-left:solid 1px #85BADF; border-bottom:solid 1px #F2F2F2; }
+.CompareLeft { border-left:solid 1px #85BADF; border-bottom:solid 1px #F2F2F2; }
+
+.ViewCartLink {
+	background: url('../../default/images/blue/Cart.gif') no-repeat 3px 0;
+}
+
+table.CartContents, table.General {
+
+}
+
+.CartContents thead tr th, table.General thead tr th {
+	padding: 8px;
+	color: #2e3a47;
+	font-size: 14px;
+	font-weight: 400;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+.CartContents tfoot .SubTotal td {
+	border-top: 1px solid #e9e9e9;
+	color: #666;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+#BrandContent .SortBox{
+	margin-right: 8px;
+}
+
+.MiniCart .SubTotal {
+	color: #075899;
+}
+
+.JustAddedProduct {
+	border: 1px solid #c0dae7;
+	background: #fff;
+}
+
+.JustAddedProduct strong, .JustAddedProduct a {
+	color: #075899;
+}
+
+.CheckoutRedeemCoupon {
+	background: #eee;
+	padding: 10px;
+	width: 300px;
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+}
+
+.SubCategoryList, .SubBrandList {
+	border: 1px solid #e9e9e9;
+}
+
+.SpecificInfoMessage {
+	background-color: #f8e4d1;
+	color: #555;
+}
+
+.InfoMessage {
+	background: #EFF8FA url('../../default/images/InfoMessage.gif') no-repeat 8px 10px;
+	border: 1px solid #C4E4EC;
+	color: #555;
+}
+
+.SuccessMessage {
+	background: #E8FFDF url('../../default/images/SuccessMessage.gif') no-repeat 8px 10px;
+	color: #555;
+	border: 1px solid #BBDF8D;
+	font-size: 13px;
+}
+
+.ErrorMessage {
+	background: #FFECEC url('../../default/images/ErrorMessage.gif') no-repeat 8px 10px;
+	color: #555;
+	border: 1px solid #FFC6C6;
+	font-size: 13px;
+}
+
+.ComparisonTable tr:hover td, .ComparisonTable tr.Over td {
+	background: #EFF8FA;
+}
+
+/* Express Checkout */
+.ExpressCheckoutBlock .ExpressCheckoutTitle {
+	background: #58DD90;
+	box-shadow: inset 0px -1px rgba(0, 0, 0, 0.1);
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 10px;
+	margin: 0;
+}
+
+.ExpressCheckoutContent{
+	border: 1px solid #ddd;
+	border-top: none;
+	padding: 15px;
+}
+
+.ExpressCheckoutBlockCollapsed .ExpressCheckoutTitle {
+	background: #f0f0f0;
+	border: 1px solid #ddd;
+	color: #555;
+}
+
+.ExpressCheckoutBlockCompleted .ExpressCheckoutCompletedContent {
+	color: #fff;
+}
+
+/* General Tables */
+table.General tbody tr td {
+	border-top: 1px solid #efefef;
+}
+
+/* Product Videos */
+
+#VideoContainer {
+	border: 1px solid #cccccc;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.currentVideo {
+	background-color: #ddf0f6;
+}
+
+.videoRow:hover {
+	background-color: #efefef;
+}
+
+/* Product Videos */
+
+#VideoContainer {
+	border: 1px solid #e9e9e9;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.currentVideo {
+	background-color: #ddf0f6;
+}
+
+.videoRow:hover {
+	background-color: #efefef;
+}
+
+#SearchResultsCategoryAndBrand {
+	background-color: #EEF5F9;
+}
+
+.CartContents .ItemShipping th {
+	border-bottom-color: #c7d7db;
+	border-top-color: #c7d7db;
+	background: #edf2f3;
+}
+
+/* Category flyout styles (theme) */
+
+/* Child menu items, does not include the always-showing root level */
+#SideCategoryList .sf-menu li ul li {
+}
+
+/* Root menu item when expanded */
+#SideCategoryList .sf-menu .sfHover a,
+/* Child menu item links */
+#SideCategoryList .sf-menu li ul a {
+	background-color: #65B2CB;
+	color: #FFF;
+}
+
+/* Parent menu items of a child being hovered (not including root-level items) */
+#SideCategoryList .sf-menu li ul li:hover > a,
+/* Child menu item while hovering */
+#SideCategoryList .sf-menu li ul a:focus,
+#SideCategoryList .sf-menu li ul a:hover,
+#SideCategoryList .sf-menu li ul a:active {
+	background-color: #075899;
+}
+
+/* End: category flyout styles */
+
+
+/* start fast cart styles */
+#fastCartContainer {
+	font-size: 13px;
+}
+.fastCartContent h2 {
+	line-height: 30px;
+	font-weight: 600;
+	color: #E13790;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+.fastCartContent h3 {
+	line-height: 30px;
+	font-weight: 600;
+	color: #E13790;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+.fastCartContent h3 i, .fastCartContent h2 i{display: none;}
+.fastCartSummaryBox {
+	background-color: #DDFEDA;
+}
+.fastCartContent .fastCartTop a,
+.fastCartContent .ProductList .ProductDetails a {
+
+}
+.fastCartContent .ProductPrice,
+.fastCartContent .ProductList em {
+	display: inline;
+}
+#fastCartNumItemsTxt{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.fastCartContent .Quantity {
+	color: #828DB3;
+}
+.fastCartContent p {
+	color: #444444;
+}
+.fastCartContent .ProductList li {
+	background-color: #FFF;
+}
+.fastCartContent .ProductPriceRating{
+	height: 80px;
+}
+/* end fast cart styles */
+
+.ModalTitle {
+background: #404247!important;
+border: 1px solid #404247 !important;
+border-bottom: 0 !important;
+min-height: 36px !important;
+}
+.modalClose{
+	color: #fff
+}

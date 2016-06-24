@@ -1,0 +1,103 @@
+
+</head>
+	<style type="text/css">
+			.iosSlider {
+				width: 900px;
+				height: 230px;
+			}
+			
+			.iosSlider .slider {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.iosSlider .slider .item {
+				position:;
+				top: 0;
+				left: 0;
+				
+				width: 320px;
+				height: 300px;
+				background: #fff;
+				margin: 0 0 0 0;
+			}
+			a:link{
+				max-width:50px;
+			}
+			
+	</style>
+	
+
+	<!--get src js script from iosslider-->	
+	<script type="text/javascript" src="%%GLOBAL_ShopPath%%/javascript/jquery/plugins/iosslider/_src/jquery.iosslider.js?%%GLOBAL_JSCacheToken%%"></script>
+
+
+	<script type="text/javascript">
+			$(document).ready(function() {
+			
+				$('.iosSlider').iosSlider({
+					snapToChildren: true,
+					desktopClickDrag: true,
+					infiniteSlider: false
+				});
+				
+			});
+	</script>	
+	<script type = "text/javascript">
+
+	</script>
+</head>
+		
+<div class="ModalContent"><div id="fastCartContainer"><div id="fastCartWrapper">
+	<div class="fastCartContent">
+		<!--<h2>%%GLOBAL_fastCartQuantityTxt%%</h2>-->
+		<div class="fastCartTop">
+			<div class="fastCartThumb" style="%%GLOBAL_HideThumbColumn%%">						 <center>%%GLOBAL_fastCartProdImg%%
+			</center>
+					<div>%%GLOBAL_fastCartProdLink%%</div>
+					<div><em class="ProductPrice">%%GLOBAL_fastCartProdTotal%%</em></div>
+					<p class="Quantity">%%LNG_QuantityAdded%%: %%GLOBAL_fastCartQuantity%%</p>
+				<div class="ProceedToCheckout">
+					<div class="CheckoutButton" style="%%GLOBAL_HideCheckoutButton%%">
+						<a href="%%GLOBAL_CheckoutLink%%" title="%%LNG_CheckoutButtonTitle%%">
+						<img src="%%GLOBAL_IMG_PATH%%/%%GLOBAL_SiteColor%%/CheckoutButton.gif" alt="" />
+						</a>
+					</div>
+					%%GLOBAL_AdditionalCheckoutButtons%%
+				</div>
+				<div class="subtotal">%%LNG_OrderSubtotal%%: <em class="ProductPrice">%%GLOBAL_fastCartSubtotal%%</em></div>
+				<div>%%LNG_YourCartContains%% <span id="fastCartNumItemsTxt">%%GLOBAL_fastCartNumItemsTxt%%</span></div>
+				<div class="actionLink">
+					<a href="#" onclick="$('.modalClose').trigger('click');">%%LNG_ContinueShopping%%</a> %%LNG_Or%%<br>
+					<a href="%%GLOBAL_ShopPath%%/cart.php">%%LNG_ViewEditCart%%</a>
+				</div>
+			</div>
+			<!--<div class="fastCartItemBox">
+				
+				
+			</div>
+			<div class="fastCartSummaryBox">
+				>
+			</div>-->
+		</div>
+		<br class="Clear" />
+		<br class="Clear" />
+		<br class="Clear" />
+
+		
+		<div class="fastCartBottom" style="%%GLOBAL_HideSuggestiveCartContent%%">
+			<h3>%%LNG_YouMayAlsoLike%%</h3>
+			<!--<p>%%LNG_SuggestiveCartIntro%%</p>-->
+						<!--<ul class="ProductList" id="fastCartSuggestive">-->
+						<!--<div class = 'iosSlider'>-->
+							<!--<ul class="ProductList" id="fastCartSuggestive">-->
+							<!--<div class = 'slider'>-->
+								%%GLOBAL_SuggestedProductListing%%
+							<!--</div>-->
+							<!--</ul>-->
+						<!--</div>-->
+						<!--</ul>-->	
+		</div>
+	</div>
+	<br class="Clear" />
+</div></div></div>

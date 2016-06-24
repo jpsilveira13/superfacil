@@ -1,0 +1,34 @@
+<html>
+<body>
+	<div style="width:800px; margin:20px auto;">
+		<div style="border-bottom:1px solid #eee; padding-bottom:20px;">
+			<table cellspacing="0" cellpadding="0" width="800">
+				<tr>
+					<td>
+						%%GLOBAL_LogoEmail%%
+					</td>
+
+					<td>
+						<h1 style="font: 24px Arial; margin: 0; font-weight: bold;">%%LNG_StatusOfReturnChanged%%</h1>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<p style="font:13px Arial;">
+			Olá %%GLOBAL_CustomerFirstName%%,<br />
+			Você recentemente enviou uma solicitação de devolução para nossa loja do(s) o(s) seguinte(s) produto(s):<br /><br />
+
+			<strong>%%GLOBAL_ProductQuantity%%</strong> x <strong>%%GLOBAL_ProductName%%</strong> <br /><br />
+
+			%%LNG_ReturnStatusChangedTo%% <strong>%%GLOBAL_ReturnStatus%%</strong>. %%GLOBAL_ReturnReceivedCredit%% <br /><br />1'
+
+			Para visualizar o status da devolução <a href="%%GLOBAL_ShopPath%%/account.php?action=view_returns" style="color: #2692C0;">clique aqui</a>.
+		</p>
+
+		<p style="font:13px Arial;">
+			%%GLOBAL_StoreName%%
+		</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<head>
+	<style type="text/css">
+			.iosSlider {
+				width: 900px;
+				height: 230px;
+			}
+			
+			.iosSlider .slider {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.iosSlider .slider .item {
+				position:;
+				top: 0;
+				left: 0;
+				
+				width: 320px;
+				height: 300px;
+				background: #fff;
+				margin: 0 0 0 0;
+			}
+			
+		
+		</style>
+	<!--get src js script from iosslider-->	
+	<script type="text/javascript" src="%%GLOBAL_ShopPath%%/javascript/jquery/plugins/slider/_src/jquery.iosslider.js?%%GLOBAL_JSCacheToken%%"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+			
+				$('.iosSlider').iosSlider({
+					snapToChildren: true,
+					desktopClickDrag: true,
+					infiniteSlider: false
+				});
+				
+			});
+		</script>
+	
+		<!--fastcart modal window-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				// attach fast cart event to all 'add to cart' link
+				$(".ProductActionAdd a[href*='cart.php?action=add']").click(function(event) {
+					MobilefastCartAction($(this).attr('href'));
+					return false;
+				});
+			});
+		</script>
+		
+</head>
+<div class="Block Moveable Panel" id="BrandContent">
+	<h2>%%GLOBAL_TrailBrandName%%</h2>
+	%%SNIPPET_CategorySortBox%%
+	<div class="BlockContent Clear">
+		%%SNIPPET_BrandPaging%%
+
+		<script type="text/javascript">
+		lang.CompareSelectMessage = '%%LNG_CompareSelectMessage%%';
+		</script>
+
+		<form name="frmCompare" id="frmCompare" action="%%GLOBAL_CompareLink%%" method="get" onsubmit="return compareProducts('%%GLOBAL_CompareLink%%')">
+			%%Panel.BrandProductListing%%
+
+			<br class="Clear" />
+			<div class="CompareButton" style="display:%%GLOBAL_HideCompareItems%%">
+				<input type="submit" value="%%LNG_CompareSelected%%" />
+			</div>
+		</form>
+		<div class="PagingBottom">
+			%%SNIPPET_BrandPaging%%
+		</div>
+	</div>
+</div>

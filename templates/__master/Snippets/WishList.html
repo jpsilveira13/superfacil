@@ -1,0 +1,19 @@
+<tr>
+	<td style="text-align: center;">
+		<input type="checkbox" name="deletewishlist[]" value="%%GLOBAL_WishListID%%" />
+	</td>
+	<td style="text-align: center;">
+		<a href="wishlist.php?action=viewwishlistitems&amp;wishlistid=%%GLOBAL_WishListID%%">%%GLOBAL_WishListName%%</a>
+	</td>
+	<td style="text-align: center;">
+		%%GLOBAL_NumOfItems%%
+	</td>
+	<td style="text-align: center;">
+		%%GLOBAL_WishListShared%%
+	</td>
+	<td style="text-align: center;">
+		<a href="wishlist.php?action=editwishlist&amp;wishlistid=%%GLOBAL_WishListID%%">%%LNG_Edit%%</a>
+		<a href="#" onclick = "ValidateDeleteWishlist(false, %%GLOBAL_WishListID%%); return false;">%%LNG_Delete%%</a>
+		%%GLOBAL_ShareWishListLink%%
+	</td>
+</tr>

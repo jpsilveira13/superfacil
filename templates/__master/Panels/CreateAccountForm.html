@@ -1,0 +1,42 @@
+%%Panel.AutoCompletarCep%%
+<div class="Block Moveable Panel" id="CreateAccountForm">
+	<h2><i class="fa fa-paper-plane"></i> %%GLOBAL_CreateAccountHeading%%</h2>
+	<div class="BlockContent">
+		<p style="display: %%GLOBAL_HideCreateAccountIntroMessage%%">
+			%%LNG_CreateAccountIntro4%% <em>%%GLOBAL_StoreName%%</em> %%LNG_CreateAccountIntro5%%
+		</p>
+
+		<p class="ErrorMessage" style="display:%%GLOBAL_HideCreateAccountErrorMessage%%">
+			%%GLOBAL_ErrorMessage%%
+		</p>
+
+		<form action="%%GLOBAL_ShopPath%%/login.php?action=save_new_account" method="post" onsubmit="return check_create_account_form()">
+			<div class="FormContainer HorizontalFormContainer">
+				<div class="Create1">
+					<h3><i class="user icon"></i> %%LNG_PersonalDetails%%</h3>
+					<p>%%LNG_CreateAccountPersonalIntro%%</p>
+					<dl style="padding-bottom:10px;">
+						%%GLOBAL_CreateAccountEmailPassword%%
+					</dl>
+				</div>
+
+				<div class="Create2">
+					<h3><i class="home icon"></i> %%LNG_ShippingDetails%%</h3>
+					<p>%%LNG_CreateAccountShippingIntro%%</p>
+					<dl>
+						%%GLOBAL_CreateAccountDetails%%
+					</dl>
+				</div>
+				<br class="Clear" />
+				<p class="CreateButton">
+					<br />
+					<button type="submit" class="positive labeled icon ui button">
+						<i class="fa fa-check-square icon"></i> %%GLOBAL_CreateAccountButtonText%%
+					</button>
+				</p>
+				<br class="Clear" />
+			</div>
+		</form>
+		%%Panel.CreateAccountJavaScript%%
+	</div>
+</div>

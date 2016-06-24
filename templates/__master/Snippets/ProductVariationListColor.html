@@ -1,0 +1,27 @@
+<div class="DetailRow">
+    <div class="Label">%%GLOBAL_VariationName%%:</div>
+        <div style="display: block;" class="custom_variation %%GLOBAL_VariationName%% Value">%%SNIPPET_OptionListColor%%</div>
+</div>
+<script language="javascript" type="text/javascript">
+    function showOptionsFor(color){
+
+    	var controlname = 'variation[%%GLOBAL_VariationNumber%%]';
+    	var htmlList = $('.ProductOptionList select');
+    	var selectInst = htmlList[0];
+    	for(var i=0;i<selectInst.options.length;i++)
+    	{
+    		if(selectInst.options[i].text == color)
+    		{
+    			selectInst.options[i].selected = true;
+                $(".VariationSelect").trigger("change");
+    		}
+    	}
+    }
+    $('.coloritem').click(function(){
+        $('.coloritemSelected').removeClass('coloritemSelected').addClass('coloritem');
+    });
+    $('.coloritem').click(function(){
+        $(this).toggleClass('coloritem coloritemSelected');
+    });
+</script>
+<br class="Clear" />

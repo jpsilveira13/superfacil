@@ -1,0 +1,354 @@
+%%SNIPPET_ProductImageZoomer%%
+
+
+
+<script type="text/javascript">//<![CDATA[
+
+var ThumbURLs = new Array();
+
+var ProductImageDescriptions = new Array();
+
+var CurrentProdThumbImage = %%GLOBAL_CurrentProdThumbImage%%;
+
+var ShowVariationThumb =false;
+
+var ProductThumbWidth = %%GLOBAL_ProductThumbWidth%%;
+
+var ProductThumbHeight =  %%GLOBAL_ProductThumbHeight%%;
+
+var ProductMaxZoomWidth = %%GLOBAL_ProductMaxZoomWidth%%;
+
+var ProductMaxZoomHeight =  %%GLOBAL_ProductMaxZoomHeight%%;
+
+var ProductTinyWidth = %%GLOBAL_ProductMaxTinyWidth%%;
+
+var ProductTinyHeight =  %%GLOBAL_ProductMaxTinyHeight%%;
+
+
+
+%%GLOBAL_ProdImageJavascript%%
+
+
+
+var ShowImageZoomer = %%GLOBAL_ShowImageZoomer%%;
+
+
+
+var productId = %%GLOBAL_ProductId%%;
+
+//]]></script>
+
+%%Discount.FreeShippingEligibility%%
+
+%%GLOBAL_ProductNameOptimizerScriptTag%%
+
+	<h1>%%GLOBAL_ProductName%%</h1>
+
+%%GLOBAL_ProductNameOptimizerNoScriptTag%%
+
+<div class="Block Moveable Panel PrimaryProductDetails" id="ProductDetails">
+
+	<div class="BlockContent">
+
+		%%GLOBAL_ProductDetailFlashMessages%%
+
+		<div class="ProductTinyImageList">
+
+			<ul>
+
+				%%SNIPPET_ProductTinyImages%%
+
+			</ul>
+
+		</div>
+
+
+
+		<div class="ProductThumb" style="%%GLOBAL_HideProductThumb%%">
+
+			%%GLOBAL_LightBoxImageJavascript%%
+
+			%%SNIPPET_ProductThumbImage%%
+
+			%%GLOBAL_AddThisLink%%
+
+		</div>
+
+		<div class="ProductMain">
+
+			%%GLOBAL_FacebookLikeButtonAbove%%
+
+			<div class="ProductDetailsGrid">
+
+				<table cellspacing="10">
+
+
+
+					<tr style="%%GLOBAL_HidePrice%%">
+
+						<td colspan="2" valign="top">
+
+							<span class="RetailPrice" style="display: %%GLOBAL_HideRRP%%">
+
+								%%GLOBAL_RetailPrice%%
+
+							</span>
+
+							<em style="float: left;" class="ProductPrice VariationProductPrice">%%GLOBAL_ProductPrice%%</em>
+
+							<br class="Clear" />
+
+							%%GLOBAL_IncludingExcludingTax%% %%GLOBAL_YouSave%%
+
+						</td>
+
+					</tr>
+
+
+
+					<tr style="display: %%GLOBAL_HideSKU%%">
+
+						<td>
+
+							<strong>%%LNG_SKU%%:</strong>
+
+						</td>
+
+
+
+						<td class="ProductSKU">
+
+							<span class="VariationProductSKU">
+
+								%%GLOBAL_SKU%%
+
+							</span>
+
+						</td>
+
+					</tr>
+
+
+
+
+
+					<tr style="%%GLOBAL_HideVendorDetails%%">
+
+						<td>
+
+							<strong>%%LNG_Vendor%%:</strong>
+
+						</td>
+
+
+
+						<td>
+
+							%%GLOBAL_VendorName%%
+
+						</td>
+
+					</tr>
+
+
+
+					<tr style="display: %%GLOBAL_HideBrandLink%%">
+
+						<td>
+
+							<strong>%%LNG_Brand%%:</strong>
+
+						</td>
+
+
+
+						<td>
+
+							<a href="%%GLOBAL_BrandLink%%">%%GLOBAL_BrandName%%</a>
+
+						</td>
+
+					</tr>
+
+
+
+					<tr style="display: %%GLOBAL_HideCondition%%">
+
+						<td>
+
+							<strong>%%LNG_Condition%%:</strong>
+
+						</td>
+
+
+
+						<td>
+
+							%%GLOBAL_ProductCondition%%
+
+						</td>
+
+					</tr>
+
+
+
+					<tr style="display: %%GLOBAL_HideWeight%%">
+
+						<td>
+
+							<strong>%%LNG_Weight%%:</strong>
+
+						</td>
+
+
+
+						<td>
+
+							<span class="VariationProductWeight">
+
+								%%GLOBAL_ProductWeight%%
+
+							</span>
+
+						</td>
+
+					</tr>
+
+
+
+					<tr style="display: %%GLOBAL_HideRating%%">
+
+						<td>
+
+							<strong>%%LNG_Rating%%:</strong>
+
+						</td>
+
+
+
+						<td>
+
+							<img width="64" height="12" src="%%GLOBAL_IMG_PATH%%/IcoRating%%GLOBAL_Rating%%.gif" alt="%%GLOBAL_ReviewLinkText%%" />
+
+						</td>
+
+					</tr>
+
+
+
+					<tr style="display: %%GLOBAL_HideAvailability%%">
+
+						<td>
+
+							<strong>%%LNG_Availability%%:</strong>
+
+						</td>
+
+
+
+						<td>
+
+							%%GLOBAL_Availability%%
+
+						</td>
+
+					</tr>
+
+
+					<tr style="%%GLOBAL_HideMinQty%%">
+
+						<td>
+
+							<strong>%%LNG_ProductMinQty%%:</strong>
+
+						</td>
+
+
+
+						<td>
+
+							%%GLOBAL_MinQty%% %%LNG_units%%
+
+						</td>
+
+					</tr>
+
+
+
+					<tr style="%%GLOBAL_HideMaxQty%%">
+
+						<td>
+
+							<strong>%%LNG_ProductMaxQty%%:</strong>
+
+						</td>
+
+
+
+						<td>
+
+							%%GLOBAL_MaxQty%% %%LNG_units%%
+
+						</td>
+
+					</tr>
+
+
+
+					<tr class="InventoryLevel" style="%%GLOBAL_HideCurrentStock%%">
+
+						<td>
+
+							<strong>%%GLOBAL_CurrentStockLabel%%:</strong>
+
+						</td>
+
+
+
+						<td>
+
+							<span class="VariationProductInventory">
+
+								%%GLOBAL_InventoryList%%
+
+							</span>
+
+						</td>
+
+					</tr>
+
+
+
+
+				</table>
+
+				%%SNIPPET_ProductExpectedReleaseDate%%
+
+				<!--%%GLOBAL_FacebookLikeButtonBelow%%-->
+
+				%%SNIPPET_ProductAddToCart%%
+
+			</div>
+
+		</div>
+
+
+
+		<div class="Parcelamento">
+
+			<h3 style="font-size:15px; text-align: center;"><i class="fa fa-credit-card"></i> Parcele sua compra</h3>
+
+			%%GLOBAL_TabelaParcela1%%
+
+		</div>
+
+
+
+		<br class="Clear" />
+
+	</div>
+
+	<br class="Clear" />
+
+</div>
+

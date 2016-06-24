@@ -1,0 +1,16 @@
+<li class="OrdenStatus">
+	<form action="%%GLOBAL_ShopPath%%/account.php" method="get" class="FloatRight" style="Clear:right;">
+		<input type="hidden" name="action" value="view_order" />
+		<input type="hidden" name="order_id" value="%%GLOBAL_OrderId%%" />
+		<input style="margin-bottom: 5px;" type="submit" class="Buttons" value="%%LNG_ViewOrder%%" style="display:%%GLOBAL_DisableViewButton%%" />
+		<a href="account.php?action=new_return&amp;order_id=%%GLOBAL_OrderId%%" class="Buttons ReturnLink" style="display: %%GLOBAL_DisableReturnButton%%;">Devolver Itens</a>
+	</form>
+	<h3><i class="fa fa-plus-square"></i> %%LNG_Order%% #%%GLOBAL_OrderId%%</h3>
+	<p class="Meta">
+		%%LNG_OrderDate%%: %%GLOBAL_OrderDate%%<br />
+	</p>
+	<strong>%%LNG_YourOrderContainsTheFollowingItems2%%</strong>
+	<ul class="OrderItemList">
+		%%GLOBAL_AccountOrderItemList%%
+	</ul>
+</li>

@@ -1,0 +1,37 @@
+<li class="OrdenStatus">
+	<form action="%%GLOBAL_ShopPath%%/account.php" method="get" class="FloatRight" style="Clear:right;">
+		<input type="hidden" name="action" value="view_order" />
+		<input type="hidden" name="order_id" value="%%GLOBAL_OrderId%%" />
+		<input style="width: 186px;margin-bottom: 5px;" type="submit" class="Buttons" value="%%LNG_ViewOrder%%" />
+
+	</form>
+	<form action="%%GLOBAL_ShopPath%%/account.php" method="get" class="FloatRight" style="Clear:right;">
+		<input type="hidden" name="action" value="reorder" />
+		<input type="hidden" name="order_id" value="%%GLOBAL_OrderId%%" />
+		<input style="width: 186px;" type="submit" class="Buttons" value="Comprar Novamente" />
+	</form>
+
+	<h3><i class="fa fa-plus-square"></i> %%LNG_Order%% #%%GLOBAL_OrderId%%</h3>
+	<p class="Meta">
+		<strong>%%LNG_OrderDate%%:</strong> %%GLOBAL_OrderDate%%
+	</p>
+
+	<p>%%LNG_ThisOrderIsMarkedAs%% <strong><em class="ordStatus">%%GLOBAL_OrderStatus%%</em></strong></p>
+
+	<div style="margin-bottom:10px;display:%%GLOBAL_HidePaymentInstructions%%">
+		<p>%%LNG_YourOrderTotalIs%% <strong><em style="display: inline;" class="ProductPrice">%%GLOBAL_OrderTotal%%</em></strong></p>
+
+		<p><strong style="text-transform: uppercase;">%%LNG_HeresHowToPayForYourOrder%%:</strong></p>
+
+		<div class="ui segment">
+			<span style="display:%%GLOBAL_HidePaymentInstructions%%">%%GLOBAL_OrderInstructions%%</span>
+		</div>
+	</div>
+
+	<strong style="text-transform: uppercase;">%%LNG_YourOrderContainsTheFollowingItems2%%</strong>
+	<div class="ui segment">
+	<ul class="OrderItemList">
+		%%GLOBAL_AccountOrderItemList%%
+	</ul>
+	</div>
+</li>

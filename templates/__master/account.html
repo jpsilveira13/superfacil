@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+%%Panel.HTMLHead%%
+<body>
+	<div id="Container">
+	%%Panel.Header%%
+
+	<div id="Wrapper">
+		%%Panel.WrapperBanner%%
+		<div class="Left" id="LayoutColumn1">
+			%%Panel.SideAccountMenu%%
+			%%Panel.SideAccountStoreCredit%%
+		</div>
+		<div class="Content Wide" id="LayoutColumn2">
+			<div class="Block YourAccount">
+				<h2><i class="fa fa-paper-plane"></i> %%LNG_YourAccount%%</h2>
+				<div class="BlockContent">
+					<p>%%LNG_YourAccountHelpIntro%%</p>
+
+					<a href="%%GLOBAL_ShopPath%%/account.php?action=inbox" style="display: %%GLOBAL_HideMessagesMenu%%" class="AccountBlock">
+						<i class="fa fa-envelope"></i>
+						<span>%%LNG_ViewMessages%%</span>
+					</a>
+
+					<a href="%%GLOBAL_ShopPath%%/account.php?action=order_status" class="AccountBlock">
+						<i class="fa fa-cube"></i>
+						<span>%%LNG_ViewYourOrderStatus%%</span>
+					</a>
+
+					<a href="%%GLOBAL_ShopPath%%/account.php?action=view_orders" class="AccountBlock">
+						<i class="fa fa-cubes"></i>
+						<span>%%LNG_CompletedOrders%%</span>
+					</a>
+					
+					<a href="%%GLOBAL_ShopPath%%/account.php?action=view_returns" style="display: %%GLOBAL_HideReturnRequestsMenu%%" class="AccountBlock">
+						<i class="fa fa-reply-all"></i>
+						<span>%%LNG_ReturnRequests%%</span>
+					</a>
+
+					<a href="%%GLOBAL_ShopPath%%/account.php?action=address_book" class="AccountBlock">
+						<i class="fa fa-book"></i>
+						<span>%%LNG_YourAddressBook%%</span>
+					</a>
+
+					<a href="%%GLOBAL_ShopPath%%/wishlist.php" style="display:%%GLOBAL_HideWishlist%%" class="AccountBlock">
+						<i class="fa fa-list-alt"></i>
+						<span>%%LNG_WishLists%%</span>
+					</a>
+
+					<a href="%%GLOBAL_ShopPath%%/account.php?action=account_details" class="AccountBlock">
+						<i class="fa fa-user"></i>
+						<span>%%LNG_YourAccountDetails%%</span>
+					</a>
+
+					<a href="%%GLOBAL_ShopPath%%/account.php?action=recent_items" class="AccountBlock">
+						<i class="fa fa-star"></i>
+						<span>%%LNG_RecentlyViewedItems%%</span>
+					</a>
+
+					<br class="Clear" />
+				</div>
+			</div>
+		</div>
+		<br class="Clear" />
+	</div>
+	%%Panel.Footer%%
+</div>
+</body>
+</html>

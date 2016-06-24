@@ -1,0 +1,88 @@
+<html>
+<body>
+	<div style="width:800px; margin:20px auto;">
+		<div style="border-bottom:1px solid #eee; padding-bottom:20px;">
+			<table cellspacing="0" cellpadding="0" width="800">
+				<tr>
+					<td>
+						%%GLOBAL_LogoEmail%%
+					</td>
+
+					<td>
+						<h1 style="font: 24px Arial; margin: 0; font-weight: bold;">Pedido #%%GLOBAL_OrderNumber%%</h1>
+						<h5 style="font: 16px Arial; margin: 0; font-weight: bold; color: #aaa;">Realizado em %%GLOBAL_DatePlaced%%</h5>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<p style="font:13px Arial;">
+			O código do seu pedido é <strong>#%%GLOBAL_OrderNumber%%</strong>. Um resumo do seu pedido é mostrado abaixo.<br />Para visualizar o status do seu pedido <a href="#" style="color: #2692C0;">clique aqui</a>.
+		</p>
+		<div style="margin-top:20px;">
+			<table cellspacing="0" cellpadding="0" width="800">
+				<tr>
+					<td>
+						<div style="padding:10px; border:1px solid #eee; font:13px Arial; width: 370px; margin-right:10px;">
+							<strong>%%LNG_ShippingAddress%%</strong><br />
+							%%GLOBAL_ShippingAddress%%
+						</div>
+					</td>
+
+					<td>
+						<div style="padding:10px; border:1px solid #eee; font:13px Arial; width: 370px">
+							<strong>%%LNG_BillingAddress%%</strong><br />
+							%%GLOBAL_BillingAddress%%
+						</div>
+					</td>
+				</tr>
+			</table>
+			<br />
+			<table cellspacing="0" cellpadding="0" width="800">
+				<tr>
+					<td>
+						<div style="padding:10px; border:1px solid #eee; font:13px Arial; width: 370px; margin-right:10px;">
+							<strong>Forma de Pagamento</strong> <br />
+							%%GLOBAL_FormaPagamento%%
+						</div>
+					</td>
+
+					<td>
+						<div style="padding:10px; border:1px solid #eee; font:13px Arial; width: 370px;">
+							<strong>Forma de Entrega</strong> <br />
+							%%GLOBAL_FormaEntrega%%
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<br />
+		<div style="padding-bottom:20px;">
+			%%GLOBAL_PendingPaymentDetails%%
+		</div>
+
+		<div style="border-bottom:1px solid #eee; padding-bottom:20px;">
+			<h1 style="font: 18px Arial; font-weight: bold; margin-bottom: 10px;">Resumo do Pedido</h1>
+			<table cellspacing="0" cellpadding="10" style="font:13px Arial;" width="800">
+				<tr>
+					<td style="background: #eee; text-align: center; font-weight: bold;">Produto</td>
+					<td style="background: #eee; text-align: center; font-weight: bold;">Codigo</td>
+					<td style="background: #eee; text-align: center; font-weight: bold;">Quantidade</td>
+					<td style="background: #eee; text-align: center; font-weight: bold;">Valor</td>
+					<td style="background: #eee; text-align: center; font-weight: bold;">Total</td>
+				</tr>
+				%%SNIPPET_CartItems%%
+			</table>
+			
+			<br />
+			<table cellspacing="5" cellpadding="5" style="font:13px Arial; border:1px solid #eee; float: right;">
+				%%SNIPPET_TotalRows%%
+			</table>
+			<br style="clear: both;" />
+		</div>
+		<p style="font:13px Arial;">
+			%%GLOBAL_StoreName%%
+		</p>
+	</div>
+</body>
+</html>

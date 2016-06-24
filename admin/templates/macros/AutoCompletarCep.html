@@ -1,0 +1,133 @@
+<script type="text/javascript">
+	window.onload = function(){
+	    $('#FormField_13').attr('onBlur', 'getEndereco()');
+	}
+
+	function getEndereco() {
+		if($.trim($("#FormField_13").val()) != ""){
+            $.getScript("http://cep.republicavirtual.com.br/web_cep.php?formato=javascript&cep="+$("#FormField_13").val(), function(){
+            	if(resultadoCEP["resultado"] != 0){
+                	$("#FormField_8").val(unescape(resultadoCEP["logradouro"]));
+                    $("#FormField_9").val(unescape(resultadoCEP["bairro"]));
+                    $("#FormField_10").val(unescape(resultadoCEP["cidade"]));
+
+                    switch(resultadoCEP["uf"]){
+                    	case "AC":
+                    	$("#FormField_12").val(unescape("Acre"));
+                    	break;
+
+                    	case "AL":
+                    	$("#FormField_12").val(unescape("Alagoas"));
+                    	break;
+
+                    	case "AP":
+                    	$("#FormField_12").val(unescape("Amapá"));
+                    	break;
+
+                    	case "AM":
+                    	$("#FormField_12").val(unescape("Amazonas"));
+                    	break;
+
+                    	case "BA":
+                    	$("#FormField_12").val(unescape("Bahia"));
+                    	break;
+
+                    	case "CE":
+                    	$("#FormField_12").val(unescape("Ceará"));
+                    	break;
+
+                    	case "DF":
+                    	$("#FormField_12").val(unescape("Distrito Federal"));
+                    	break;
+
+                    	case "ES":
+                    	$("#FormField_12").val(unescape("Espírito Santo"));
+                    	break;
+
+                    	case "GO":
+                    	$("#FormField_12").val(unescape("Goiás"));
+                    	break;
+
+                    	case "MA":
+                    	$("#FormField_12").val(unescape("Maranhão"));
+                    	break;
+
+                    	case "MT":
+                    	$("#FormField_12").val(unescape("Mato Grosso"));
+                    	break;
+
+                    	case "MS":
+                    	$("#FormField_12").val(unescape("Mato Grosso do Sul"));
+                    	break;
+
+                    	case "MG":
+                    	$("#FormField_12").val(unescape("Minas Gerais"));
+                    	break;
+
+                    	case "AC":
+                    	$("#FormField_12").val(unescape("Acre"));
+                    	break;
+
+                    	case "PA":
+                    	$("#FormField_12").val(unescape("Pará"));
+
+                    	case "PB":
+                    	$("#FormField_12").val(unescape("Paraíba"));
+                    	break;
+
+                    	case "PR":
+                    	$("#FormField_12").val(unescape("Paraná"));
+                    	break;
+
+                    	case "PE":
+                    	$("#FormField_12").val(unescape("Pernambuco"));
+                    	break;
+
+                    	case "PI":
+                    	$("#FormField_12").val(unescape("Piauí"));
+                    	break;
+
+                    	case "RJ":
+                    	$("#FormField_12").val(unescape("Rio de Janeiro"));
+                    	break;
+
+                    	case "RN":
+                    	$("#FormField_12").val(unescape("Rio Grande do Norte"));
+                    	break;
+
+                    	case "RS":
+                    	$("#FormField_12").val(unescape("Rio Grande do Sul"));
+                    	break;
+
+                    	case "RO":
+                    	$("#FormField_12").val(unescape("Rondônia"));
+                    	break;
+
+                    	case "RR":
+                    	$("#FormField_12").val(unescape("Roraima"));
+                    	break;
+
+                    	case "SC":
+                    	$("#FormField_12").val(unescape("Santa Catarina"));
+                    	break;
+
+                    	case "SP":
+                    	$("#FormField_12").val(unescape("São Paulo"));
+                    	break;
+
+                    	case "SE":
+                    	$("#FormField_12").val(unescape("Sergipe"));
+                    	break;
+
+                    	case "TO":
+                    	$("#FormField_12").val(unescape("Tocantins"));
+                    	break;
+                	}
+                    
+                }else{
+                    alert("Endereço não encontrado");
+                }
+            });				
+        }			
+    }
+</script>

@@ -1,0 +1,77 @@
+	<form enctype="multipart/form-data" action="index.php?ToDo=importProducts&Step=3" id="frmImport" method="post" onsubmit="return ValidateForm(CheckImportProductForm)">
+	<input type="hidden" name="ImportSession" value="{{ ImportSession|raw }}" />
+	<div class="BodyContainer">
+		<table cellSpacing="0" cellPadding="0" width="100%" style="margin-left: 4px; margin-top: 8px;">
+		<tr>
+			<td class="Heading1">{% lang 'ImportProductsStep2' %}</td>
+		</tr>
+		<tr>
+			<td class="Intro">
+				<p>{% lang 'ImportProductsStep2Desc' %}</p>
+				{{ Message|raw }}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div>
+					<input type="reset" value="{% lang 'Cancel' %}" class="btn btn-cancel" onclick="ConfirmCancel()" />
+					<input type="submit" value="{% lang 'Next' %} &raquo;" class="btn btn-atualize" />
+				</div>
+				<br />
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+			  <table class="Panel">
+				<tr>
+				  <td class="Heading2" colspan="2">{% lang 'ImportLinkFields' %}</td>
+				</tr>
+				<tr>
+					<table width="600">
+						{{ ImportFieldList|raw }}
+					</table>
+				</tr>
+			 </table>
+			</td>
+		</tr>
+		</table>
+		<table border="0" cellspacing="0" cellpadding="2" width="100%" class="PanelPlain">
+			<tr>
+				<td>
+					<input type="reset" value="{% lang 'Cancel' %}" class="btn btn-cancel" onclick="ConfirmCancel()" />
+					<input type="submit" value="{% lang 'Next' %} &raquo;" class="btn btn-atualize" />
+				</td>
+			</tr>
+		</table>
+		<script type="text/javascript">
+		function ConfirmCancel()
+		{
+			if(confirm('{% lang 'ConfirmCancelImport' %}'))
+				window.location = 'index.php?ToDo=importProducts';
+		}
+
+		function CheckImportProductForm()
+		{
+			var f = document.getElementById('Matchprodname');
+			if(f.selectedIndex <= 0)
+			{
+				alert('{% lang 'NoMatchProductName' %}');
+				f.focus();
+				return false;
+			}
+
+			if(g('categoryTypeSingle').style.display != 'none') {
+				var f = document.getElementById('Matchcategory');
+				if(1 == 0{{ CategoryRequired|raw }} && f.selectedIndex <= 0)
+				{
+					alert('{% lang 'NoMatchCategory' %}');
+					f.focus();
+					return false;
+				}
+			}
+			return true;
+		}
+		</script>
+	</div>
+</form>

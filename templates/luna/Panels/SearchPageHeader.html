@@ -1,0 +1,15 @@
+<div class="Block Moveable Panel" id="SearchPageHeader">
+	<h2><i class="fa fa-search"></i> %%GLOBAL_SearchTitle%%</h2>
+
+	<a name="results"></a>
+
+	<p class="InfoMessage" style="display:%%GLOBAL_HideRelatedSearches%%">
+		<strong>%%LNG_RelatedSearches%%:</strong> %%SNIPPET_RelatedSearches%%
+	</p>
+
+	<p class="SearchSuggest" style="display: %%GLOBAL_ShowSearchSuggestion%%">
+		<strong>%%LNG_DidYouMean%%:</strong> <a href="%%GLOBAL_ShopPath%%/search.php?search_query=%%GLOBAL_SuggestQueryEscaped%%&amp;correction=%%GLOBAL_SearchId%%">%%GLOBAL_SuggestQuery%%</a>
+	</p>
+
+	%%Panel.SearchJavaScript%%
+</div>

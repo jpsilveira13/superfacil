@@ -1,0 +1,19 @@
+<form method="post" action="#" id="shipping_list" onsubmit="ExpressCheckout.ChooseShippingProvider(); return false;">
+	<p>%%LNG_ExpressCheckoutSelectShippingProvider%%</p>
+	%%GLOBAL_ShippingQuotes%%
+	<br class="Clear" />
+	%%GLOBAL_DeliveryDisclaimer%%
+	<br />
+	<input type="submit" value="%%LNG_Continue%%" class="Buttons" />
+</form>
+
+	<script type="text/javascript">
+		$(".ShippingProviderList :radio").hide().click(function(e){
+			e.stopPropagation();
+		});
+		
+		$(".ShippingProviderList li").click(function(e){
+			$(this).closest(".ShippingProviderList").find("li").removeClass("selected");
+			$(this).addClass("selected").find(":radio").click();
+		});
+	</script>

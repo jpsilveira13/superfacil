@@ -1,0 +1,37 @@
+	%%Panel.AutoCompletarCep%%
+	<script type="text/javascript">
+		jQuery(function($){
+			$("#FormField_13").mask("99.999-999");
+			$("#FormField_6").mask("999.999.999-99");
+			$("#FormField_7").mask("(99) 9999-9999");
+		});
+	</script>
+	<div class="Block Moveable Panel" id="ShippingAddressForm">
+		<h2><i class="fa fa-paper-plane"></i> %%GLOBAL_ShippingAddressFormTitle%%</h2>
+		<div class="BlockContent">
+			<p class="InfoMessage" style="display: %%GLOBAL_HideAddShippingAddressIntroMessage%%">
+				%%GLOBAL_ShippingAddressFormIntro%%
+			</p>
+
+			<div style="display: %%GLOBAL_HideAddShippingAddressMessage%%">%%GLOBAL_Message%%</div>
+
+			<form id="AddressEditForm" method="post" action="%%GLOBAL_ShopPathSSL%%/account.php?action=%%GLOBAL_ShippingAddressFormAction%%" onsubmit="return check_shipping_address_form()" class="PL20">
+				<input type="hidden" name="shipid" value="%%GLOBAL_ShipId%%" />
+
+				<div class="FormContainer HorizontalFormContainer">
+					<dl>
+						%%GLOBAL_ShipCustomFields%%
+					</dl>
+					<p class="Submit">
+						<input type="submit" class="Buttons" value="%%LNG_SaveAddress%%" />
+					</p>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		lang.ConfirmAddressTypeChange = '%%LNG_ConfirmAddressTypeChange%%';
+	</script>
+
+	%%Panel.AddShippingAddressJavaScript%%

@@ -1,0 +1,35 @@
+<div class="ModalContent"><div id="fastCartContainer"><div id="fastCartWrapper">
+	<div class="fastCartContent">
+		<h2><i class="fa fa-paper-plane"></i> %%GLOBAL_fastCartQuantityTxt%%</h2>
+		<div class="fastCartTop">
+			<div class="fastCartThumb" style="%%GLOBAL_HideThumbColumn%%">%%GLOBAL_fastCartProdImg%%&nbsp;</div>
+			<div class="fastCartItemBox">
+				<div>%%GLOBAL_fastCartProdLink%%</div>
+				<div><em class="ProductPrice">%%GLOBAL_fastCartProdTotal%%</em></div>
+				<p class="Quantity">%%LNG_QuantityAdded%%: %%GLOBAL_fastCartQuantity%%</p>
+			</div>
+			<div class="fastCartSummaryBox">
+				<div class="ProceedToCheckout">
+					<div class="CheckoutButton" style="%%GLOBAL_HideCheckoutButton%%">
+						<a href="%%GLOBAL_CheckoutLink%%" class="Buttons" title="%%LNG_CheckoutButtonTitle%%">
+							<i class="fa fa-check-square"></i> Finalizar Pedido
+						</a>
+					</div>
+					%%GLOBAL_AdditionalCheckoutButtons%%
+				</div>
+				<div class="subtotal">%%LNG_OrderSubtotal%%: <em class="ProductPrice">%%GLOBAL_fastCartSubtotal%%</em></div>
+				<div>%%LNG_YourCartContains%% <span id="fastCartNumItemsTxt">%%GLOBAL_fastCartNumItemsTxt%%</span></div>
+			</div>
+		</div>
+		<br class="Clear" />
+
+		<div class="fastCartBottom" style="%%GLOBAL_HideSuggestiveCartContent%%">
+			<h3><i class="fa fa-paper-plane"></i> %%LNG_YouMayAlsoLike%%</h3>
+			<p>%%LNG_SuggestiveCartIntro%%</p>
+			<ul class="ProductList" id="fastCartSuggestive">
+				%%GLOBAL_SuggestedProductListing%%
+			</ul>
+		</div>
+	</div>
+	<br class="Clear" />
+</div></div></div>
