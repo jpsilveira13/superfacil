@@ -5,19 +5,19 @@
 	$GLOBALS['ISC_CFG']["isSetup"] = true;
 	$GLOBALS['ISC_CFG']["Language"] = 'br';
 	$GLOBALS['ISC_CFG']["AllowPurchasing"] = 1;
-	$GLOBALS['ISC_CFG']["serverStamp"] = '';
-	$GLOBALS['ISC_CFG']["HostingProvider"] = '';
+	$GLOBALS['ISC_CFG']["serverStamp"] = 'JRLOJAAMxAjM9E0RhVkRlFkZJhUc5pGU#cVMvk&c0kUQBFUQBN%UVR%ZnFURBp0TMJlS';
+	$GLOBALS['ISC_CFG']["HostingProvider"] = 'WWW.HOSTLOJA.NET';
 	$GLOBALS['ISC_CFG']["UseWYSIWYG"] = 1;
 	$GLOBALS['ISC_CFG']["ParcelaComJuros"] = '12';
 	$GLOBALS['ISC_CFG']["ParcelaSemJuros"] = '6';
 	$GLOBALS['ISC_CFG']["dbType"] = 'mysql';
 	$GLOBALS['ISC_CFG']["dbEncoding"] = 'UTF8';
 	$GLOBALS['ISC_CFG']["dbServer"] = 'localhost';
-	$GLOBALS['ISC_CFG']["dbUser"] = 'oxynutri_loja';
-	$GLOBALS['ISC_CFG']["dbPass"] = 'vO693graMr6GOyHprsxvh';
-	$GLOBALS['ISC_CFG']["dbDatabase"] = 'oxynutri_loja';
-	$GLOBALS['ISC_CFG']["tablePrefix"] = 'sole_';
-	$GLOBALS['ISC_CFG']["StoreName"] = 'Oxynutri Suplementos';
+	$GLOBALS['ISC_CFG']["dbUser"] = 'supermer_facil';
+	$GLOBALS['ISC_CFG']["dbPass"] = 'supermercado200*';
+	$GLOBALS['ISC_CFG']["dbDatabase"] = 'supermer_facil';
+	$GLOBALS['ISC_CFG']["tablePrefix"] = 'isc_';
+	$GLOBALS['ISC_CFG']["StoreName"] = 'Supermercado Fácil';
 	$GLOBALS['ISC_CFG']["StoreAddress"] = 'Avenida Guilherme Ferreira, 1035
 Uberaba - MG
 CEP 38022-200
@@ -25,11 +25,11 @@ Telefone: 34 3332.0270
 ';
 	$GLOBALS['ISC_CFG']["LogoType"] = 'image';
 	$GLOBALS['ISC_CFG']["StoreLogo"] = 'logotipo-oxy.png';
-	$GLOBALS['ISC_CFG']["ShopPath"] = 'http://www.oxynutri.com.br';
+	$GLOBALS['ISC_CFG']["ShopPath"] = 'http://www.supermercadofacil.com';
 	$GLOBALS['ISC_CFG']["CharacterSet"] = 'UTF-8';
-	$GLOBALS['ISC_CFG']["HomePagePageTitle"] = 'Oxynutri Suplementos';
-	$GLOBALS['ISC_CFG']["MetaKeywords"] = 'Oxynutri Suplementos';
-	$GLOBALS['ISC_CFG']["MetaDesc"] = 'Oxynutri Suplementos';
+	$GLOBALS['ISC_CFG']["HomePagePageTitle"] = 'Supermercado Fácil';
+	$GLOBALS['ISC_CFG']["MetaKeywords"] = 'Supermercado Fácil';
+	$GLOBALS['ISC_CFG']["MetaDesc"] = 'Supermercado Fácil';
 	$GLOBALS['ISC_CFG']["DownloadDirectory"] = 'product_downloads';
 	$GLOBALS['ISC_CFG']["ImageDirectory"] = 'product_images';
 	$GLOBALS['ISC_CFG']["template"] = 'oxynutri';
@@ -67,21 +67,21 @@ Telefone: 34 3332.0270
 	$GLOBALS['ISC_CFG']["ShowAddToCartQtyBox"] = 1;
 	$GLOBALS['ISC_CFG']["CaptchaEnabled"] = 1;
 	$GLOBALS['ISC_CFG']["ShowCartSuggestions"] = 1;
-	$GLOBALS['ISC_CFG']["AdminEmail"] = 'vendas@oxynutri.com.br';
-	$GLOBALS['ISC_CFG']["OrderEmail"] = 'vendas@oxynutri.com.br';
-	$GLOBALS['ISC_CFG']['LowInventoryNotificationAddress'] = 'vendas@oxynutri.com.br';
+	$GLOBALS['ISC_CFG']["AdminEmail"] = 'vendas@supermercadofacil.com';
+	$GLOBALS['ISC_CFG']["OrderEmail"] = 'vendas@supermercadofacil.com';
+	$GLOBALS['ISC_CFG']['LowInventoryNotificationAddress'] = '@supermercadofacil.com';
 	$GLOBALS['ISC_CFG']["ShowThumbsInCart"] = 1;
 	$GLOBALS['ISC_CFG']["AutoApproveReviews"] = 0;
 	$GLOBALS['ISC_CFG']["SearchSuggest"] = 1;
 	$GLOBALS['ISC_CFG']["QuickSearch"] = 1;
 
 	// Shipping Settings
-	$GLOBALS['ISC_CFG']["CompanyName"] = 'Oxynutri Suplementos';
-	$GLOBALS['ISC_CFG']["CompanyAddress"] = 'Avenida Guilherme Ferreira, 1035';
+	$GLOBALS['ISC_CFG']["CompanyName"] = 'Supermercado Fácil';
+	$GLOBALS['ISC_CFG']["CompanyAddress"] = '';
 	$GLOBALS['ISC_CFG']["CompanyCity"] = 'Uberaba';
 	$GLOBALS['ISC_CFG']["CompanyCountry"] = 'Brasil';
 	$GLOBALS['ISC_CFG']["CompanyState"] = 'Minas Gerais';
-	$GLOBALS['ISC_CFG']["CompanyZip"] = '38022200';
+	$GLOBALS['ISC_CFG']["CompanyZip"] = '38022290';
 
 	// Checkout Settings
 	$GLOBALS['ISC_CFG']["CheckoutMethods"] = 'checkout_pagseguro,checkout_paypal';
@@ -233,7 +233,7 @@ Telefone: 34 3332.0270
 	$GLOBALS['ISC_CFG']['AffiliateConversionTrackingCode'] = '';
 
 	$GLOBALS['ISC_CFG']['GuestCustomerGroup'] = 0;
-	$GLOBALS['ISC_CFG']['ForwardInvoiceEmails'] = 'vendas@oxynutri.com.br';
+	$GLOBALS['ISC_CFG']['ForwardInvoiceEmails'] = 'vendas@supermercadofacil.com';
 
 	// Mail Settings
 	$GLOBALS['ISC_CFG']['MailUseSMTP'] = 0;
@@ -347,7 +347,7 @@ Telefone: 34 3332.0270
 	// Maintenance
 	$GLOBALS['ISC_CFG']["DownForMaintenance"] = 0;
 	$GLOBALS['ISC_CFG']["DownForMaintenanceMessage"] = 'Esta loja está indisponível no momento devido à manutenção. Ela deve estar disponível novamente em breve. <br /><br />
-CONTATO: contato@oxynutri.com.br';
+CONTATO: contato@supermercadofacil.com';
 
 	// Starting Order Number
 	$GLOBALS['ISC_CFG']["StartingOrderNumber"] = 251;
@@ -441,7 +441,7 @@ CONTATO: contato@oxynutri.com.br';
 	$GLOBALS['ISC_CFG']['FacebookLikeButtonPosition'] = 'below';
 	$GLOBALS['ISC_CFG']['FacebookLikeButtonVerb'] = 'like';
 	$GLOBALS['ISC_CFG']['FacebookLikeButtonShowFaces'] = 1;
-	$GLOBALS['ISC_CFG']['FacebookLikeButtonAdminIds'] = 'oxynutrisuplementos';
+	$GLOBALS['ISC_CFG']['FacebookLikeButtonAdminIds'] = 'supermercadofacil';
 
 	// Deleted orders handling
 	$GLOBALS['ISC_CFG']['DeletedOrdersAction'] = 'purge';

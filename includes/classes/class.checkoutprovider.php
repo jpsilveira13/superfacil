@@ -229,7 +229,7 @@ class ISC_CHECKOUT_PROVIDER extends ISC_MODULE
 	 * @param boolean Set to false to not draw the table header rows and intro text
 	 * @return string The generated configuration page/sheet.
 	 */
-	public function GetPropertiesSheet($tabId, $doHeaderRows=true, $moduleId='')
+	public function GetPropertiesSheet($tabId,$idGlobal,$jsGlobal,$jsSelectedFunction, $doHeaderRows=true, $moduleId=null)
 	{
 		$this->PreparePropertiesSheet($tabId, 'CheckoutId', 'CheckoutJavaScript', 'checkout_selected', array(), $moduleId);
 
